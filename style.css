@@ -1,0 +1,207 @@
+:root {
+    --primary: #5c67f2;
+    --bg: #f5f7fb;
+    --white: #ffffff;
+    --text: #333;
+    --gray: #777;
+    --green: #28a745;
+    --red: #ea4335;
+}
+
+* { margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg); 
+    padding: 20px; 
+    color: var(--text); 
+}
+
+.container { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+}
+
+header h1 { 
+    color: var(--primary);
+    margin-bottom: 25px; 
+    text-align: center; 
+}
+
+/* Dashboard Counters */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.start-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.strat-card h2 { 
+    font-size: 2.2rem; 
+    color: var(--primary); 
+    margin-top: 5px; 
+}
+.strat-card.interview h2 { 
+    color: var(--green); 
+}
+.strat-card.rejected h2 { 
+    color: var(--red); 
+}
+
+/* Header and Tabs */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tabs { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 25px; 
+}
+
+.tab-btn {
+    padding: 10px 22px;
+    border: none;
+    background: #e0e4ef;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.tab-btn.active {
+     background: var(--primary); 
+     color: white; 
+    }
+
+/* Job Cards Layout */
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border-top: 4px solid var(--primary);
+}
+
+.delete-btn {
+    position: absolute; 
+    top: 10px; 
+    right: 10px;
+    background: #fff0f0; 
+    border: none; 
+    color: var(--red);
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%; 
+    cursor: pointer;
+    font-size: 1.2rem; 
+    line-height: 1;
+}
+
+.company-tag { 
+    color: var(--primary); 
+    font-size: 0.8rem; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+.job-card h3 { 
+    margin: 8px 0; 
+    font-size: 1.15rem; 
+}
+.loc-type { 
+    font-size: 0.85rem; 
+    color: var(--gray); 
+    margin-bottom: 5px; 
+}
+.salary {
+     color: var(--green); 
+     font-weight: bold; 
+     margin-bottom: 12px; 
+     font-size: 0.95rem; 
+    }
+.desc { 
+    font-size: 0.9rem; 
+    color: #555; 
+    margin-bottom: 18px; 
+    line-height: 1.4; 
+}
+
+/* Buttons in Card */
+.actions { 
+    display: flex; 
+    gap: 8px; 
+}
+
+.actions button {
+    flex: 1;
+     padding: 9px; 
+     border-radius: 5px; 
+     border: 1px solid white;
+    cursor: pointer; 
+    font-weight: 600; 
+    background: white;
+}
+
+.active-status.btn-int { 
+    background: var(--green); 
+    color: white; 
+    border-color: var(--green); 
+}
+.active-status.btn-rej { 
+    background: var(--red); 
+    color: white; 
+    border-color: var(--red); 
+}
+
+/* Empty State Styling */
+.empty-state {
+    display: none; 
+    text-align: center; 
+    background: white;
+    padding: 60px 20px; 
+    border-radius: 12px; 
+    width: 100%;
+}
+.empty-state img { 
+    width: 100px; 
+    margin-bottom: 15px; 
+    opacity: 0.5; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .section-header {
+         flex-direction: column; 
+         align-items: flex-start; 
+        gap: 8px; 
+    }
+    .tabs { 
+        width: 100%; 
+        overflow-x: auto; 
+        padding-bottom: 5px;
+     }
+    .job-grid {
+         grid-template-columns: 1fr; 
+        }
+}
