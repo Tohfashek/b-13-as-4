@@ -90,8 +90,9 @@ header h1 {
 
 /* Job Cards Layout */
 .job-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); */
     gap: 20px;
 }
 
