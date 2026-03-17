@@ -1,81 +1,38 @@
-## Welcome To ( সহজ সরল সিম্পল ) Assignment - 4 
-
-
----
-# 📅 No Deadline For 60 marks <span style="color: #22c55e;">( যেকোনো সময়ে সাবমিট করলেই ৬০ মার্কে কাউন্ট হবে এবং এর জন্য কোনো লাইফ ব্যবহার করতে হবে না)</span>
-
-
-# Main Requirements
-
-## Design Part
-
-## Dashboard
-- Website name and Create a dashboard like figma 
-- The section should be responsive for mobile devices. It is totally up to you. 
-
-## Available Jobs Section
-- A title on the left side, jobs count on the right side 
-- 3 different tab  below the section title 
-- Minimum 8 cards with:
-	- companyName
-	- position
-	- location
-	- type
-	- salary
-	- description
-	- 2 buttons: Interview, Rejected
-- By default all the jobs data will show on All tab, and the Interview, Rejected tab will show “No jobs Available” message with a subtitle below and an icon/image on the above
-
-- The section should be responsive for mobile devices. It is totally up to you.
-
---- 
-
-## Functionalities Part
-- Clicking on Interview button on the card 
-    - will add the data on Interview tab 
-    - add the status as Interview.
-    - Will increase the the count of interview in Dashboard 
-
-- Clicking on Rejected button on the card 
-    - will add the data on Rejected tab 
-    - add the status as Rejected.
-    - Will increase the the count of Rejected in Dashboard
-
-- Enable toggle between Interview and rejected button(you can select Rejected button after clicking on Interview, and Interview button after clicking on Rejected button). It will change the tab and dashboard count also. It will show tab wise jobs count on the right.
-
----
-
-# Challenges Requirements
-- Clicking on the delete button will remove that card from the UI, and the count will be deducted from the dashboard card and the main section.
-- No lorem ipsum text on your website. At least 8 meaningful commits in your project.  
-
-- Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
-
-
 ## Answers to Questions
 
 ### 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
+Ans:*getElementById is use for searcing specific element.its working very fast.
+
+*getElementsByClassName is used by select all elements thre have a specifuc class.
+
+*querySelector is used like css and its used for select first elements.
+
+*querySelectorAll is use for select all element and making a list.
+
+
 ### 2. How do you create and insert a new element into the DOM?
+Ans:for create and insert a new element we use 3steps. such as 1>creat:use creatElement to creat element.
+2>Add content:use innerHtml to add html code
+3>Insert:use append child to add it main html.
+
 
 ### 3. What is Event Bubbling? And how does it work?
+Ans: Event bubbling is a element which is using at Javascripts events which is go up DOM tree.
+
+Its works if you click div btn then that event works first up div thenbody then documents like that. 
 
 ### 4. What is Event Delegation in JavaScript? Why is it useful?
+Ans:Event Delegation is a event which is javascript.which work for not adding all child listener element.
 
-### 5. What is the difference between preventDefault() and stopPropagation() methods?
+for using shortcut or manage 100 btn for 1 btn.
+and its works dynamically.
 
----
+### 5.ans What is the difference between preventDefault() and stopPropagation() methods?
+Ans:preventDefault():Its work for off stop url link from reloading the page.
 
-
-**Technology Stack:**
-- HTML
-- CSS (Vanilla/Tailwind/DaisyUI)
-- JavaScript (Vanilla)
+stopPropagation():its works for stop Event Bubble.its works basically don't go up child event to parent elements. 
 
 
---- 
 
-## What to submit: 
 
-1. GitHub Repository Link: 
-2. Live Site Link: 
